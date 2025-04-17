@@ -1,12 +1,20 @@
 from User import Student
 from brummie import BrummieAssistant
+from personalised_notification_menu import personalised_notification
+from notification import PersonalisedNotification
 
 if __name__ == "__main__":
-    alice = Student("Alice", "1234567890")
+    # call menu from personalised_notification_menu.py
+    # personalised_notification()
+    # need to integrate menu with chatroom
+    # updated example user Alice and Bob because an extra attribute was added to Student class
+    notification_system = PersonalisedNotification()
+
+    alice = Student("Alice", "1234567890", notification_system)
     brummie = BrummieAssistant()
     chatroom = alice.create_chatroom('gossip')
 
-    bob = Student("Bob", "0987654321")
+    bob = Student("Bob", "0987654321", notification_system)
     bob.join_chatroom(chatroom)
     chatroom.add_user(brummie)
 
@@ -24,7 +32,3 @@ if __name__ == "__main__":
                 print(response)
 
             # Brummie respond only if the message contains @brummie
-
-
-
-

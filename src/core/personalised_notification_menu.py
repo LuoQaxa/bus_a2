@@ -8,7 +8,7 @@ def personalised_notification():
     # hardcode - example users
     users = {
         "1111": Staff("Amy", "1111"),
-        "2111": Student("Alice", "2111", notification_system,["Exams", "Events"]),
+        "2111": Student("Kat", "2111", notification_system,["Exams", "Events"]),
         "3111": Student("Tom", "3111", notification_system,["Events", "Sports"], can_post=True)
     }
 
