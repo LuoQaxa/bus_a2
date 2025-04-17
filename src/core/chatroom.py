@@ -1,3 +1,4 @@
+
 class ChatRoom():
     def __init__(self, name):
         self.name = name
@@ -28,3 +29,4 @@ class ChatRoom():
 
     def broadcast(self, sender, content):
         self.messages.append(f"{sender}：{content}")
+        print(f"{sender.name}: {content}")
