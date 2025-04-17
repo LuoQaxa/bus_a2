@@ -37,7 +37,7 @@ class PersonalisedNotification(object):
         if subscriber in self._subscribers:
             self._subscribers.remove(subscriber)
 
-    # class methods - with references to class diagram
+    # Add  method - with references to class diagram
     def postAnnouncement(self, announcement, user):
         if user.canPostAnnouncement(): # this stop authorised user from posting announcement
             print(f"***Announcement Posted*** Title: {announcement.title}, Category: {announcement.category}, Content: {announcement.content}")
@@ -52,15 +52,15 @@ class PersonalisedNotification(object):
         else:
             print(f"Not authorised to post announcement.")
 
-    # class methods - with references to class diagram
+    # Add method - with references to class diagram
     # method to send notification
     def sendNotification(self, user, message):
         print(f"[>>> Notification Sent to {user.name}] Message: {message}")
         notification = Notification(user.student_id, message)
-        user.sub(notification.message) # .sub method from Student class
+        user.sub(notification.message) # .sub -  method from Student class
         return notification
 
-    # class methods - with references to class diagram
+    # Add method - with references to class diagram
     # it returns the list of items from the dashboard
     def generateDashboard(self, user):
         print(f"\n[---Dashboard for {user.name}---]")
