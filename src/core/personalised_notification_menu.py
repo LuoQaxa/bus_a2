@@ -1,4 +1,4 @@
-from User import Staff, Student
+from user import Staff, Student
 from notification import PersonalisedNotification, Announcement
 
 def personalised_notification():

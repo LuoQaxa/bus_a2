@@ -25,6 +25,7 @@ class Student(User):
 
     def create_chatroom(self, name):
         chat_room = chatroom.ChatRoom(name)
+        print(f"{self.name} created a chatroom: {name}")
         self.join_chatroom(chat_room)
         self.chatroom = chat_room
         return chat_room
