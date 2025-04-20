@@ -1,4 +1,4 @@
-from User import User
+from user import User
 
 #brummie is an AI assistant in our study room
 class BrummieAssistant(User):
