@@ -12,7 +12,7 @@ if __name__ == "__main__":
 
     alice = Student("Alice", "1234567890", notification_system)
     brummie = BrummieAssistant()
-    chatroom = alice.create_chatroom('gossip')
+    chatroom = alice.create_chatroom('BUS')
 
     bob = Student("Bob", "0987654321", notification_system)
     bob.join_chatroom(chatroom)
