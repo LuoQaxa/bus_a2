@@ -35,7 +35,7 @@ def main():
                                "3. Exit\n"
                                "Please select the feature you would like to experience: "))
         except ValueError:
-            print("Invalid input. Please enter a number between 1-5.")
+            print("Invalid input. Please enter a number between 1-3.")
             continue
 
         match choice:
@@ -43,7 +43,6 @@ def main():
                 handle_chatroom()
             case 2:
                 personalised_notification()
-                print("Personalised notification feature is not available yet.")
             case 3:
                 print("Exiting the program.")
                 break
