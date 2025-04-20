@@ -1,4 +1,4 @@
-from User import Student
+from user import Student
 from brummie import BrummieAssistant
 from personalised_notification_menu import personalised_notification
 from notification import PersonalisedNotification

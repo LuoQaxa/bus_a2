@@ -25,8 +25,10 @@ class ChatRoom():
         if user in self.users:
             self.users.remove(user)
             print(f"{user.name} left the chatroom.")
+        else:
+            raise ValueError("User not found in chatroom.")
 
 
     def broadcast(self, sender, content):
-        self.messages.append(f"{sender}：{content}")
+        self.messages.append({ 'sender': sender, 'content': content})
         print(f"{sender.name}: {content}")
