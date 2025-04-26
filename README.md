@@ -14,8 +14,9 @@ On academy-wise, the AI assistant Brummie integrates personalized information fo
 ### Languages, Object-Oriented Design, Design Patterns, Testing Framework
 - This prototype uses Python as the primary programming language. 
 - It showcases the inheritance relationships in User module, association relationships in personalizedNotification (e.g., subscriber() has User), and Chatroom (e.g., join_chatroom() has User) module. 
-- Publish/Subscriber is the design pattern implemented in this prototype. 
-- For test case implementation, we chose pytest as our testing framework, as it is famous for fastly building functional testing for applications. For example, In the Notification.py, the PersonalisedNotification class is a mediator between subscribers (students) and publishers (authorized users). It automatically sends notifications to relevant students when new announcements are published.
+- Publish/Subscriber is the design pattern implemented in this prototype. For example, In the Notification.py, the PersonalisedNotification class is a mediator between subscribers (students) and publishers (authorized users). It automatically sends notifications to relevant students when new announcements are published.
+- For test case implementation, we chose pytest as our testing framework, as it is famous for fastly building functional testing for applications.
+
 ---
 
 # bus_a2
