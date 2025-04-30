@@ -82,7 +82,7 @@ Please select the feature you would like to experience:
 
   You can:
 
-  - Type messages to communicate.
+  - Type messages to communicate with other users.
   - Mention AI assistant by `@brummie` in your message to ask Brummie a question.
   - Type `exit` in the message and send it out to leave the chat room.
 
